@@ -10,7 +10,7 @@
     },
     {
       "type": "doc",
-      "id": "prepare-for-merge"
+      "id": "wallet/withdraw-validator"
     },
     {
       "type": "doc",
@@ -119,10 +119,6 @@
             {
               "type": "doc",
               "id": "wallet/deterministic"
-            },
-            {
-              "type": "doc",
-              "id": "wallet/remote"
             },
             {
               "type": "doc",
