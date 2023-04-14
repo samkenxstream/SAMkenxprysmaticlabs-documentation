@@ -13,8 +13,8 @@ import TabItem from '@theme/TabItem';
         <div class='task'>
             <div class='input-container'><input id="tc-2" type='checkbox'/><span class='done'></span></div>
             <div class='guidance-container'>
-                <label for="tc-2">2. Configure for The Merge</label>
-                <p>Many common issues are resolved by the steps in our <a target="_blank" href='../prepare-for-merge'>Configure for The Merge</a> checklist. We recommend completing this Merge configuration checklist before proceeding here.</p>
+                <label for="tc-2">2. Check Quickstart Configurations</label>
+                <p>Many common issues are resolved by the steps in our <a target="_blank" href='../install/install-with-script'>Quickstart guide</a>. We recommend reviewing the quickstart guide before continuing below.</p>
             </div>
         </div>
         <div class='task'>
@@ -144,13 +144,11 @@ import TabItem from '@theme/TabItem';
                         {label: 'Network:', value: 'label'},
                         {label: 'Mainnet', value: 'mainnet'},
                         {label: 'Goerli-Prater', value: 'goerli-prater'},
-                        {label: 'Sepolia', value: 'sepolia'},
-                        {label: 'Ropsten', value: 'ropsten'}
+                        {label: 'Sepolia', value: 'sepolia'}
                     ]}>
                     <TabItem value="mainnet">Paste your validator's public key (available in your <code>deposit_data-*.json</code> file) into a <a href='https://beaconcha.in'>blockchain explorer like beaconcha.in</a> to check the status of your validator.</TabItem>
                     <TabItem value="goerli-prater">Paste your validator's public key (available in your <code>deposit_data-*.json</code> file) into a <a href='https://prater.beaconcha.in/'>Goerli-Prater blockchain explorer like beaconcha.in</a> to check the status of your validator.</TabItem>
                     <TabItem value="sepolia">Running a validator on Sepolia is currently unsupported as Sepolia is a permissioned network, so there's nothing to do here.</TabItem>
-                    <TabItem value="ropsten">Paste your validator's public key (available in your <code>deposit_data-*.json</code> file) into a <a href='https://ropsten.beaconcha.in/'>Ropsten blockchain explorer like beaconcha.in</a> to check the status of your validator.</TabItem>
                 </Tabs>
                 </p>
             </div>

@@ -6,16 +6,27 @@ sidebar_label: Use prysmctl
 
 import {HeaderBadgesWidget} from '@site/src/components/HeaderBadgesWidget.js';
 
-<HeaderBadgesWidget commaDelimitedContributors="James" lastVerifiedDateString="February 23rd, 2023" lastVerifiedVersionString="v3.2.0"/>
+<HeaderBadgesWidget commaDelimitedContributors="James" lastVerifiedDateString="March 20th, 2023" lastVerifiedVersionString="v4.0.0"/>
 
 `prysmctl` is a command-line utility for common and one-off Ethereum proof-of-stake tasks, like helping users with validator exits or withdrawals. Most `prysmctl` commands require access to a fully synced beacon node.
 
 
 ### Run via binaries
 
-Binaries for the latest `prysmctl` tool can be found on the [latest prysm release page](https://github.com/prysmaticlabs/prysm/releases). Each binary is a unique version with its own set of features. New releases may include new features for `prysmctl` that will need to be downloaded separately.
+Binaries for the latest `prysmctl` tool can be found on the [latest prysm release page](https://github.com/prysmaticlabs/prysm/releases). Each binary is a unique version with its own set of features. New releases may include new features for `prysmctl` that will need to be downloaded separately. The installed binaries will need to be renamed to `prysmctl` to use the example below. 
 
-The binaries can be run through a terminal directly and won't need installation. Please refer to the **list commands** section for additional information.
+:::info
+
+Some users will need to give permissions to the the downloaded binaries to be executable. Linux users can do this by right clicking the file, going to permissions, and clicking the `Allow executing file as program` checkmark. This may be different for each operating system.
+
+:::
+
+Example of running prysmctl by opening a terminal at the installed location after renaming.
+```
+./prysmctl --help
+```
+
+The binaries can be run through a terminal directly and won't need installation. Please refer to the **list commands** section for additional information. 
 
 ### Install via source
 
@@ -59,6 +70,11 @@ Bazel will automatically pull and install any dependencies as well, including Go
 
 ```
 ./prysmctl --help
+```
+
+**Using Docker**
+```
+docker run -it gcr.io/prysmaticlabs/prysm/cmd/prysmctl:latest --help
 ```
 
 The `—help` flag will provide a list of commands, subcommands, and flags to use.
